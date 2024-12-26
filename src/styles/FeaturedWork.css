@@ -1,0 +1,72 @@
+.featured-work {
+    padding: 40px;
+    /* background-color: #1f1f1f; */
+    background-image: url('https://themes247.net/html5/construction-template/demo/assets/img/bg-section-1.jpg');
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .featured-work h2 {
+    color: #FFBC13;
+    margin-bottom: 20px;
+  }
+  
+  .projects {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+  
+  .project-card {
+    width: 300px;
+    background-color: #333333;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;  /* Add a smooth transition for the image */
+  }
+  
+  .project-card .project-info {
+    padding: 20px;
+  }
+  
+  .project-card h3 {
+    color: #ffa500;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .project-card p {
+    color: #cccccc;
+    font-size: 14px;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-card .building-name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: black;
+    font-size: 18px;
+    display: none; /* Hidden by default */
+  }
+  
+  .project-card:hover .building-name {
+    display: block; /* Show on hover */
+  }
+  
+  .project-card:hover img {
+    opacity: 0.5;  /* Make the image slightly transparent on hover */
+  }
+  

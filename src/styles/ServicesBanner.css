@@ -1,0 +1,26 @@
+.services-banner {
+    text-align: center;
+    background: url("https://themes247.net/html5/construction-template/demo/assets/img/bg-section-4.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .services {
+    display: flex;
+    flex-direction: column; /* Ensure progress bars are one below the other */
+    align-items: center; /* Center content */
+    gap: 20px; /* Add spacing between items */
+  }
+  
+  .service {
+    width: 80%; /* Adjust width for responsiveness */
+    max-width: 600px; /* Limit maximum width */
+    text-align: left;
+  }
+  
+  .service-text {
+    margin-bottom: 10px; /* Add spacing between text and the progress bar */
+    font-size: 1.2em;
+    font-weight: bold;
+  }

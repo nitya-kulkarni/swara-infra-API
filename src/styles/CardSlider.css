@@ -1,0 +1,77 @@
+.slider-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+  }
+  
+  .slider-container h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .slider-container p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .slider-card {
+    background: #ddd;
+    border: none;
+    color: black;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 300px; /* Reduced width */
+    margin: 0 auto; /* Center the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .slider-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-icon {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .slider-card:hover .card-icon {
+    color: black;
+  }
+  
+  .slider-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .slider-card p {
+    font-size: 14px;
+    color: black;
+    line-height: 1.6;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+    font-size: 20px;
+  }
+  
+  .slick-dots li button:before {
+    color: black;
+    font-size: 12px;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: black;
+    font-size: 14px;
+  }
+  

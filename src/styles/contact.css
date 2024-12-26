@@ -1,0 +1,120 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 200px;
+  /* background-color: #ccc; */
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.left, .right {
+  width: 48%;
+}
+
+.left {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.left img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right input, .right textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.right textarea {
+  height: 100px;
+}
+
+.send-button {
+  background-color: #8403e0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #4B0082;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+}
+
+/* Add this to Contact.css */
+.map-container {
+  width: 100%;
+  height: 200px;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.subject-dropdown {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* font-size: 16px; */
+}
+
+.subject-dropdown {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* font-size: 16px; */
+  transition: all 0.3s ease;
+}
+
+.subject-dropdown:hover {
+  background-color: #f1f1f1;
+  border-color: #ffc107;
+  cursor: pointer;
+}
+
+.right input:hover, 
+.right textarea:hover {
+  background-color: #f1f1f1;
+  border-color: #ffc107;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}

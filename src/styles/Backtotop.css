@@ -1,0 +1,45 @@
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .back-to-top-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color:#4B0082;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
+  }
+  
+  .back-to-top-button:hover {
+    transform: scale(1.1);
+    background-color: #4B0082; 
+  }
+  
+  .double-chevron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chevron {
+    width: 14px;
+    height: 14px;
+    border-left: 3px solid white;
+    border-top: 3px solid white;
+    transform: rotate(45deg);
+    margin-bottom: 4px;
+    transition: border-color 0.3s ease-in-out; 
+  }
+  
+  .chevron:last-child {
+    margin-bottom: 0;
+  }

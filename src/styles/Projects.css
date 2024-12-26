@@ -1,0 +1,204 @@
+.projects-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button.active-tab {
+  background-color: #4B0082;
+  font-weight: bold;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 10px;
+}
+
+.project-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 200%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 10px;
+  text-align: left;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 10px;
+}
+
+.project-card {
+  position: relative;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 200%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover .project-details {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tabs button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button.active-tab {
+  background-color: #4B0082;
+  font-weight: bold;
+  color: white;
+}
+@media (max-width: 768px) {
+  .tabs button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 15px;
+  }
+
+  .project-card {
+    width: 100%; /* Cards take full available space in their grid column */
+  }
+
+  .project-image {
+    height: 200px;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tabs button {
+    margin: 5px 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .project-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 375px) {
+  .tabs button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+}
+
+@media (max-width: 320px) {
+  .tabs button {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-image {
+    height: 120px;
+  }
+
+  .projects-container {
+    padding: 10px;
+  }
+}
