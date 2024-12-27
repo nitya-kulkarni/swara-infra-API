@@ -1,11 +1,11 @@
 package com.example.swarainfra.service;
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import com.example.swarainfra.model.Contact;
 import com.example.swarainfra.repository.ContactRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class ContactService {
@@ -17,8 +17,7 @@ public class ContactService {
         return contactRepository.save(contact);
     }
 
-	public List<Contact> getPaginatedContacts(int page, int size) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    public List<Contact> getAllContacts() {
+        return contactRepository.findAll();
+    }
 }
