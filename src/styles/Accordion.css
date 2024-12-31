@@ -1,0 +1,160 @@
+.accordion {
+  width: 750px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordion-heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-title.active {
+  background-color: #840dda;
+  color: white; 
+}
+
+.accordion-title:hover {
+  background-color: #840dda;
+}
+
+.accordion-content {
+  padding: 15px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  line-height: 1.8;
+  border-top: 1px solid #ddd;
+  font-family:Geologica;
+  
+}
+
+.accordion-content p {
+  margin: 0;
+  font-size: 14px;
+  font-family:Geologica;
+  color: #555;
+}
+
+.accordion-title span {
+  font-size: 18px;
+  font-family:Geologica;
+}
+
+
+@media (max-width: 320px) {
+  .accordion {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .accordion-heading {
+    font-size: 20px;
+  }
+
+  .accordion-title {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .accordion-content {
+    font-size: 12px;
+  }
+
+  .accordion-title span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .accordion {
+    width: 100%;
+    margin: 15px;
+  }
+
+  .accordion-heading {
+    font-size: 22px;
+  }
+
+  .accordion-title {
+    font-size: 17px;
+    padding: 13px;
+  }
+
+  .accordion-content {
+    font-size: 13px;
+  }
+
+  .accordion-title span {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 425px) {
+  .accordion {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .accordion-heading {
+    font-size: 23px;
+  }
+
+  .accordion-title {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .accordion-content {
+    font-size: 14px;
+  }
+
+  .accordion-title span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  .accordion-heading {
+    font-size: 24px;
+  }
+
+  .accordion-title {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .accordion-content {
+    font-size: 14px;
+  }
+
+  .accordion-title span {
+    font-size: 18px;
+  }
+}

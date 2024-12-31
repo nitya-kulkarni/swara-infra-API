@@ -13,15 +13,20 @@ public class ImageService {
     @Autowired
     private ImageRepository imageRepository;
 
-    public List<ImageDetails> getAllImages() {
-        return imageRepository.findAll();
-    }
-
     public ImageDetails saveImageDetails(ImageDetails imageDetails) {
         return imageRepository.save(imageDetails);
+    }
+
+    public List<ImageDetails> getAllImages() {
+        return imageRepository.findAll();
     }
 
     public void deleteImageById(String id) {
         imageRepository.deleteById(id);
     }
+
+    public List<ImageDetails> findImagesByCriteria(String location, Integer squareFeet, Boolean completed, Boolean ongoing) {
+        return imageRepository.findByCriteria(location, squareFeet, completed, ongoing);
+    }
 }
+

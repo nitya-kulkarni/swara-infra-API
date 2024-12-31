@@ -1,0 +1,120 @@
+.slider-container {
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+    background-image: url('../assets/Cardsliderbg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-container h2 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #4B0082;
+  margin: 0;
+  font-family: lilita one;
+}
+
+.slider-container p {
+  margin-bottom: 30px;
+  color: #555;
+  font-size: 18px;
+  font-family:Geologica;
+  color: #555;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px;
+  justify-items: center;
+  padding: 10px;
+}
+
+.slider-card {
+  background: white; 
+  border: 2px solid #4B0082;
+  color: black;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%; 
+  height: 200px; 
+  max-width: 300px; 
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slider-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-icon {
+  font-size: 50px;
+  color: black;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.slider-card:hover .card-icon {
+  color: black;
+}
+
+.slider-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+  font-family:Geologica;
+  color: #555;
+}
+
+.slider-card p {
+  color: black;
+  line-height: 1.6;
+  font-size: 18px;
+  font-family:Geologica;
+  color: #555;
+}
+
+
+@media (max-width: 768px) {
+  .slider-container h2{
+    font-size: 40px;
+  }
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px;
+  }
+
+  .slider-card {
+    height: 280px; 
+  }
+}
+
+@media (max-width: 425px) {
+  .slider-container h2{
+    font-size: 30px;
+  }
+  .card-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .slider-card {
+    height: 260px; 
+  }
+}
+
+@media (max-width: 375px) {
+  .slider-container h2{
+    font-size: 25px;
+  }
+}
+@media (max-width: 320px) {
+  .slider-container h2{
+    font-size: 20px;
+  }
+}

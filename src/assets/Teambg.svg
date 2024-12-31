@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="444" height="297" viewBox="0 0 444 297">
+  <g id="Group_3044" data-name="Group 3044" transform="translate(-132 -1032.824)">
+    <g id="Group_3041" data-name="Group 3041" transform="translate(132 1033)">
+      <circle id="Ellipse_328" data-name="Ellipse 328" cx="49.5" cy="49.5" r="49.5" transform="translate(0 -0.175)" fill="#e65851"/>
+      <circle id="Ellipse_331" data-name="Ellipse 331" cx="5" cy="5" r="5" transform="translate(111 44.825)" fill="#fff"/>
+      <circle id="Ellipse_333" data-name="Ellipse 333" cx="5" cy="5" r="5" transform="translate(127 44.825)" fill="#fff"/>
+      <circle id="Ellipse_335" data-name="Ellipse 335" cx="5" cy="5" r="5" transform="translate(143 44.825)" fill="#fff"/>
+      <ellipse id="Ellipse_337" data-name="Ellipse 337" cx="4.5" cy="5" rx="4.5" ry="5" transform="translate(160 44.825)" fill="#fff"/>
+      <circle id="Ellipse_339" data-name="Ellipse 339" cx="5" cy="5" r="5" transform="translate(176 44.825)" fill="#fff"/>
+      <circle id="Ellipse_341" data-name="Ellipse 341" cx="5" cy="5" r="5" transform="translate(192 44.825)" fill="#fff"/>
+      <circle id="Ellipse_343" data-name="Ellipse 343" cx="5" cy="5" r="5" transform="translate(208 44.825)" fill="#fff"/>
+      <circle id="Ellipse_344" data-name="Ellipse 344" cx="49.5" cy="49.5" r="49.5" transform="translate(229 -0.175)" fill="#f3b33d"/>
+    </g>
+    <g id="Group_3043" data-name="Group 3043" transform="translate(248.256 1230.883)">
+      <circle id="Ellipse_328-2" data-name="Ellipse 328" cx="49.5" cy="49.5" r="49.5" transform="translate(-0.256 -0.059)" fill="#8743a3"/>
+      <circle id="Ellipse_331-2" data-name="Ellipse 331" cx="4.5" cy="4.5" r="4.5" transform="translate(111.744 44.941)" fill="#fff"/>
+      <ellipse id="Ellipse_333-2" data-name="Ellipse 333" cx="5" cy="4.5" rx="5" ry="4.5" transform="translate(127.744 44.941)" fill="#fff"/>
+      <ellipse id="Ellipse_335-2" data-name="Ellipse 335" cx="5" cy="4.5" rx="5" ry="4.5" transform="translate(143.744 44.941)" fill="#fff"/>
+      <ellipse id="Ellipse_337-2" data-name="Ellipse 337" cx="5" cy="4.5" rx="5" ry="4.5" transform="translate(159.744 44.941)" fill="#fff"/>
+      <ellipse id="Ellipse_339-2" data-name="Ellipse 339" cx="5" cy="4.5" rx="5" ry="4.5" transform="translate(175.744 44.941)" fill="#fff"/>
+      <ellipse id="Ellipse_341-2" data-name="Ellipse 341" cx="5" cy="4.5" rx="5" ry="4.5" transform="translate(191.744 44.941)" fill="#fff"/>
+      <ellipse id="Ellipse_343-2" data-name="Ellipse 343" cx="5" cy="4.5" rx="5" ry="4.5" transform="translate(207.744 44.941)" fill="#fff"/>
+      <circle id="Ellipse_344-2" data-name="Ellipse 344" cx="49.5" cy="49.5" r="49.5" transform="translate(228.744 -0.059)" fill="#44c9ca"/>
+    </g>
+    <g id="Group_3042" data-name="Group 3042" transform="translate(322.681 1223.872) rotate(-60)">
+      <circle id="Ellipse_331-3" data-name="Ellipse 331" cx="4.947" cy="4.947" r="4.947" transform="translate(0 0)" fill="#fff"/>
+      <circle id="Ellipse_333-3" data-name="Ellipse 333" cx="4.947" cy="4.947" r="4.947" transform="translate(16.078 0)" fill="#fff"/>
+      <circle id="Ellipse_335-3" data-name="Ellipse 335" cx="4.947" cy="4.947" r="4.947" transform="translate(32.156 0)" fill="#fff"/>
+      <circle id="Ellipse_337-3" data-name="Ellipse 337" cx="4.947" cy="4.947" r="4.947" transform="translate(48.234 0)" fill="#fff"/>
+      <circle id="Ellipse_339-3" data-name="Ellipse 339" cx="4.947" cy="4.947" r="4.947" transform="translate(64.312 0)" fill="#fff"/>
+      <circle id="Ellipse_341-3" data-name="Ellipse 341" cx="4.947" cy="4.947" r="4.947" transform="translate(80.39 0)" fill="#fff"/>
+      <circle id="Ellipse_343-3" data-name="Ellipse 343" cx="4.947" cy="4.947" r="4.947" transform="translate(96.468 0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

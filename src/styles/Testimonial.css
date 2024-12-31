@@ -1,0 +1,253 @@
+  .container {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    color: #333;
+    position: relative;
+    background-image: url('../assets/Testimonialbg.jpg');
+    background-size: cover;
+    background-position:center;
+  }
+
+  .content {
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+  }
+
+  .partners-section {
+    flex: 1; 
+    text-align: center;
+  }
+
+  .partners-section h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #4B0082;
+  }
+
+  .partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
+
+  .partner-card {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+
+  .partner-card img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .testimonials-section {
+    flex: 1; 
+    text-align: left;
+    margin-left: 160px; 
+  }
+
+  .testimonials-section h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #4B0082;
+    text-align: center;
+  }
+
+  .testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 550px;
+    height: 200px; 
+    overflow-y: auto; 
+  }
+
+  .testimonial-card p {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #555;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .testimonial-author h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .testimonial-author p {
+    margin: 0;
+    color: #777;
+  }
+
+  .rating {
+    margin-left: auto;
+    color: #ffa500;
+    font-size: 18px;
+  }
+
+  .testimonial-buttons {
+    margin-top: 20px;
+  }
+
+  .testimonial-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #FFBC13;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .testimonial-buttons button:hover {
+    background-color: #4B0082;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column; 
+      margin-left: 30px; 
+    }
+
+    .partners-section h2{
+      font-size: 30px;
+    }
+
+    .testimonials-section {
+      margin-left: 0; 
+      margin-top: 10px; 
+    }
+
+    .testimonial-card {
+      width: 100%; 
+      height: auto; 
+    }
+
+    .partners-section h2{
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .testimonial-card {
+      width: 100%;
+      padding: 15px; 
+      margin-left: 20px;
+    }
+
+    .testimonials-section h2 {
+      text-align: center;
+      font-size: 25px; 
+    }
+
+    .testimonial-author h4 {
+      font-size: 16px; 
+    }
+
+    .testimonial-author p {
+      font-size: 14px; 
+    }
+
+    .rating {
+      font-size: 16px; 
+    }
+
+    .testimonial-buttons button {
+      padding: 8px 16px; 
+      font-size: 14px;
+      margin: 5px;
+    }
+
+    .partners-section h2{
+      font-size: 25px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .testimonial-card {
+      padding: 10px; 
+      margin-left: 25px;
+      width:250px
+    }
+
+    .testimonials-section h2 {
+      font-size: 25px; 
+      text-align: center;
+    }
+
+    .testimonial-author h4 {
+      font-size: 14px; 
+    }
+
+    .testimonial-author p {
+      font-size: 12px; 
+    }
+
+    .rating {
+      font-size: 14px; 
+    }
+
+    .testimonial-buttons button {
+      padding: 6px 12px; 
+      font-size: 12px;
+      margin: 3px;
+    }
+
+    .partners-section h2{
+      font-size: 25px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .testimonial-card {
+      padding: 8px; 
+      margin-left: 10px;
+    }
+
+    .testimonials-section h2 {
+      font-size: 20px;
+      text-align: center; 
+    }
+
+    .testimonial-author h4 {
+      font-size: 12px; 
+    }
+
+    .testimonial-author p {
+      font-size: 10px; 
+    }
+
+    .rating {
+      font-size: 12px; 
+    }
+
+    .testimonial-buttons button {
+      padding: 4px 8px; 
+      font-size: 10px;
+      margin: 2px;
+    }
+
+    .partners-section h2{
+      font-size: 20px;
+    }
+  }

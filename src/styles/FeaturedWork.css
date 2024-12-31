@@ -1,0 +1,128 @@
+.featured-work {
+  padding: 40px;
+  background-image: url('../assets/Footerbg.jpg');
+  color: #ffffff;
+  text-align: center;
+}
+
+.featured-work h2 {
+  color: #FFBC13;
+  margin-bottom: 20px;
+  font-family: lilita one;
+  font-size: 40px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap; 
+}
+
+.project-card1 {
+  width: 300px; 
+  background-color: #333333;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 350px;
+}
+
+.project-card1 img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.project-card1 .project-info {
+  padding: 20px;
+}
+
+.project-card1 h3 {
+  color: #ffa500;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.project-card1 p {
+  color: #cccccc;
+  font-size: 14px;
+}
+
+.project-card1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-card1 .building-name {
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  display: none; 
+}
+
+.project-card1:hover .building-name {
+  display: block;
+}
+
+.project-card1:hover img {
+  opacity: 0.5; 
+}
+
+@media (max-width: 768px) {
+  .projects {
+    gap: 20px;
+    justify-content: center;
+  }
+  .project-card1 {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  .featured-work h2{
+    font-size: 30px;
+  }
+  .projects {
+    gap: 30px; 
+    justify-content: center;
+  }
+  .project-card1 {
+    width: 200px;
+    height: 300px; 
+  }
+}
+
+@media (max-width: 375px) {
+  .featured-work h2{
+    font-size: 25px;
+  }
+  .projects {
+    gap: 20px;
+    justify-content: center;
+  }
+  .project-card1 {
+    width: 180px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 320px) {
+  .featured-work h2{
+    font-size: 20px;
+  }
+  .projects {
+    gap: 15px; 
+    justify-content: center;
+  }
+  .project-card1 {
+    width: 160px;
+    height: 200px; 
+  }
+}

@@ -1,0 +1,250 @@
+.offer-section {
+  text-align: center;
+  padding: 20px 60px;
+  position: relative;
+  background-image: url('../assets/Pricingbg.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.offer-section h2{
+  font-family: lilita one;
+  font-size: 40px;
+}
+.offer-title {
+  font-size: 2rem;
+  color: #4B0082;
+  margin-bottom: 20px;
+}
+
+.offer-carousel .offer-member {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 5px; 
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.offer-carousel .offer-member:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+  background-color: #f0f8ff; 
+}
+
+.offer-member-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover; 
+  filter: none; 
+  opacity: 1;
+  height: 300px;
+}
+
+.offer-member-name {
+  font-size: 1.5rem;
+  color: #3B0082; 
+  margin: 5px 0;
+}
+
+.offer-member-role {
+  font-size: 1.2rem;
+  color: black; 
+}
+
+
+.fact:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease; 
+}
+
+
+.facts-section {
+  text-align: center;
+  background-size: cover;
+  background-image: url('../assets/Awesomebg.jpg');    
+  color: white;
+  background-repeat: no-repeat; 
+  padding: 60px 0;
+  width: 100%; 
+  margin: 0; 
+  box-sizing: border-box;
+  position: relative;
+}
+
+.facts-section h2 {
+  font-size: 32px; 
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.facts-section h3 {
+  font-size: 24px; 
+  margin-bottom: 30px;
+}
+
+.facts {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap; 
+}
+
+.fact {
+  text-align: center;
+  max-width: 250px; 
+  margin-bottom: 20px;
+}
+
+.fact h4 {
+  font-size: 30px; 
+  color: white;
+  font-weight: bold;
+}
+
+.fact p {
+  font-size: 18px;
+  font-family:Geologica;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .offer-section h2{
+    font-size: 40px;
+  }
+  .facts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fact {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .offer-carousel .offer-member {
+    margin: 10px 0;
+  }
+
+  .offer-title {
+    font-size: 1.8rem;
+  }
+
+  .offer-member-role {
+    font-size: 1.2rem;
+    color: black; 
+  }
+
+  .offer-member-image {
+    height: 250px;
+  }
+}
+
+@media (max-width: 425px) {
+  .offer-section h2{
+    font-size: 30px;
+  }
+  .facts-section h2 {
+    font-size: 24px;
+  }
+
+  .facts-section h3 {
+    font-size: 18px;
+  }
+
+  .fact h4 {
+    font-size: 22px;
+  }
+
+  .offer-member-name {
+    font-size: 1.3rem;
+  }
+
+  .offer-member-role {
+    font-size: 1rem;
+  }
+
+  .offer-carousel .offer-member {
+    padding: 8px;
+  }
+
+  .offer-member-image {
+    height: 240px;
+  }
+}
+
+@media (max-width: 375px) {
+  .offer-section{
+    width: 90%;
+  }
+  .offer-section h2{
+    font-size: 25px;
+  }
+  .facts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fact {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .offer-section {
+    padding: 20px 10px;
+  }
+
+  .offer-title {
+    font-size: 1.6rem;
+  }
+
+  .offer-member-name {
+    font-size: 1.2rem;
+  }
+
+  .offer-member-role {
+    font-size: 0.9rem;
+  }
+
+  .offer-member-image {
+    height: 240px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .offer-section{
+    width: 90%;
+  }
+  .offer-section h2{
+    font-size: 20px;
+  }
+  .facts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fact {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .offer-title {
+    font-size: 1.4rem;
+  }
+
+  .offer-member-name {
+    font-size: 1rem;
+  }
+
+  .offer-member-role {
+    font-size: 0.9rem;
+  }
+
+  .offer-member-image {
+    height: 240px;
+    width: 100%;
+  }
+}

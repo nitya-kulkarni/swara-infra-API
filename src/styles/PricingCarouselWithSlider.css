@@ -1,0 +1,271 @@
+
+.carousel-container {
+  text-align: center;
+  padding: 2rem;
+  color: #333;
+  background: none;
+  margin-top: 110px;
+  position: relative;
+  background-image: url('../assets/Pricingbg.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-header {
+  font-size: 2.5rem;
+  color: #4B0082;
+  margin-bottom: 0.5rem;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 20px;
+  font-family: lilita one;
+}
+
+.carousel-subtext {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family:Geologica;
+  color: #555;
+}
+
+.price-slider {
+  padding-bottom: 40px;
+}
+
+
+.pricing-card {
+  background: whitesmoke;
+  color: #333;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 280px; 
+  margin: 20px auto;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-card h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  /* font-size: 18px; */
+  font-family:Geologica;
+  color: #555;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #4B0082;
+  font-family:Geologica;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family:Geologica;
+  color: black;
+}
+
+.pricing-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.buy-btn {
+  background: #FFBC13;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family:Geologica;
+  color: black;
+}
+
+.buy-btn:hover {
+  background: #FFBC13;
+}
+
+.slick-slide {
+  transform: scale(0.9);
+  transition: transform 0.5s ease, opacity 0.5s ease, z-index 0.5s ease;
+  z-index: 0;
+}
+
+.slick-center {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 10;
+  position: relative;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.active-card {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  animation: slide-up 0.5s ease, highlight 0.5s ease;
+}
+
+
+@keyframes slide-up {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.price-slider {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 30px auto 0;
+}
+
+.slider {
+  width: 100%;
+  margin: 1rem 0;
+  appearance: none;
+  height: 5px;
+  background: #ddd;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #FFBC13;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .carousel-header{
+    font-size: 40px;
+  }
+  .carousel-container {
+    padding: 1rem;
+    margin-top: 150px;
+  }
+
+ 
+  .pricing-card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+ 
+  .slick-center {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 425px) {
+  .carousel-header{
+    font-size: 30px;
+  }
+  .carousel-container {
+    margin-top: 180px;
+  }
+  .pricing-card {
+    width: 95%;
+    margin: 10px auto;
+    padding: 1.2rem;
+  }
+
+  .pricing-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .price {
+    font-size: 1.3rem;
+  }
+
+  .buy-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .carousel-header{
+    font-size: 25px;
+  }
+  .pricing-card {
+    width: 100%;
+    margin: 10px auto;
+    padding: 1rem;
+  }
+
+  .pricing-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+
+  .buy-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .carousel-header{
+    font-size: 20px;
+  }
+  .pricing-card {
+    width: 100%;
+    margin: 10px auto;
+    padding: 1rem;
+  }
+
+  .pricing-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .price {
+    font-size: 1.1rem;
+  }
+
+  .buy-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}

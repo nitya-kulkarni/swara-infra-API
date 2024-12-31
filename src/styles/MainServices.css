@@ -1,0 +1,99 @@
+.card4-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.main-services-container h2 {
+  text-align: center;
+  color: #4B0082;
+  padding: 40px 40px;
+  position: relative;
+  background-color: rgb(252, 232, 232);
+  background-image: url('../assets/Cardsliderbg.png');
+  background-size: cover;
+  background-position: center;
+  font-family: lilita one;
+  font-size: 40px;
+}
+
+.card4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card4:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.card4-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card4-content.image-left .card4-image {
+  order: 0;
+}
+
+.card4-content.image-right .card4-image {
+  order: 1;
+}
+
+.card4-image {
+  width: 120px;
+  border-radius: 20px;
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+
+.card4:hover .card4-image {
+  transform: scale(1.1); 
+}
+
+.card4-text {
+  max-width: 500px;
+}
+
+.card4-text h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s ease; 
+}
+
+.card4-text p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  transition: color 0.3s ease; 
+  font-size: 18px;
+  font-family:Geologica;
+}
+
+.card4:hover .card4-text h3 {
+  color: #FFBC13; 
+}
+
+.card4:hover .card4-text p {
+  color: #333; 
+}
+
+@media (min-width: 768px) {
+  .card4-container {
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    font-size: 16px;
+  }
+}

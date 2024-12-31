@@ -1,0 +1,144 @@
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  position: fixed; 
+  top: 50px;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.custom-social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  margin-left: 35px;
+}
+
+.custom-social-links a {
+  text-decoration: none;
+  color: #4b0082;
+  font-size: 1.2em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-social-links a:hover {
+  color: #ffbc13;
+  transform: scale(1.2);
+}
+
+.custom-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+.custom-hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.custom-nav-links {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  margin-right: 30px;
+}
+
+.custom-nav-links li {
+  margin: 0;
+}
+
+.custom-nav-links a {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-nav-links a:hover {
+  color: #ffcc00;
+  transform: scale(1.3);
+}
+
+.custom-nav-links.custom-active {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: fixed; 
+    top: 90px;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .custom-nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 200px;
+    text-align: right;
+  }
+
+  .custom-nav-links.custom-active {
+    display: flex;
+  }
+
+  .custom-nav-links a {
+    color: black;
+    padding: 10px 0;
+  }
+
+  .custom-hamburger {
+    display: flex;
+  }
+
+  .custom-social-links {
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: fixed; 
+    top: 120px;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .custom-social-links {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
