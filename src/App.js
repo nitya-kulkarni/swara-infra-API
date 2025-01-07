@@ -13,21 +13,17 @@ import Auth from './components/Auth';
 import BallCursor from "./components/Cursor";
 import Backtotop from "./components/Backtotop";
 import { useCookies } from 'react-cookie';
+// import WhatsAppButton from './components/Whattsapp';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Manage login state
   const [cookies] = useCookies(['user']); // Get user data from cookies
 
-  // Handle login logic
-  const handleLogin = () => {
-    setIsLoggedIn(true);
-  };
-
   // Check if user is already logged in via cookies
   useEffect(() => {
     if (cookies.user) {
       try {
-        JSON.parse(cookies.user); // Try parsing cookies
+        const user = JSON.parse(cookies.user);
         setIsLoggedIn(true); // If successful, mark as logged in
       } catch (error) {
         console.error("Error parsing cookies data:", error);
@@ -38,13 +34,14 @@ const App = () => {
   return (
     <Router>
       <div>
+        {/* <WhatsAppButton /> */}
         <Backtotop />
         <BallCursor />
         <TopBar />
         <Navbar />
         <Routes>
           {/* Route Definitions */}
-          <Route path="*" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/packages" element={<Packages />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
@@ -61,7 +58,7 @@ const App = () => {
           <Route path="/premium" element={<Premium />} />
           <Route
             path="/login"
-            element={<Auth handleLogin={handleLogin} />}
+            element={<Auth handleLogin={() => setIsLoggedIn(true)} />}
           />
         </Routes>
         <Footer />
